@@ -33,6 +33,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
 }
 
+h1 {
+    font-size: 35px;
+}
+
 /* header */
 header {
     background: linear-gradient(to right, var(--blue), var(--purple));
@@ -49,6 +53,7 @@ header {
     display: flex;
     flex-direction: column;
 }
+
 .header-nav {
     display: flex;
     flex-direction: row;
@@ -83,10 +88,6 @@ header {
     text-align: center;
     width: 60%;
     gap: 25px;
-}
-
-.header-content-inner h1 {
-    font-size: 35px;
 }
 
 .header-content-inner p {
@@ -284,3 +285,84 @@ main {
     font-weight: 300;
 }
 
+/* contact */
+.contact-base {
+    background: linear-gradient(to right, var(--blue), var(--purple));
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contact {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    flex-basis: 1200px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h1 {
+    margin-bottom: 30px;
+}
+
+.contact p {
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 60%;
+}
+
+.large-label {
+    width: 100%;
+    text-align: left;
+    font-size: 14px;
+    padding: 5px 0;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+}
+
+form button {
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 150px
+}
+
+/*footer */
+footer {
+    background-color: var(--black);
+    width: 100%;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    padding: 20px 0;
+    font-size: 12px;
+}
